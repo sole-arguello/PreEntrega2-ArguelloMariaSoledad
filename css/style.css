@@ -79,6 +79,8 @@ i {
 .autor:hover{
   color: beige;
 }
+
+/*----MEDIA QUERY-----*/
 @media (min-width: 1030px) {
   .card__img {
     height: 200px;

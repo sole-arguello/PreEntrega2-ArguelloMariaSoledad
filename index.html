@@ -10,15 +10,6 @@
       href="./assets/icons8-uñas-16.png"
       type="image/x-icon"
     />
-    <!------ LINK CSS BOOTSTRAP -------->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <!-- MI CSS -->
-    <link rel="stylesheet" href="./css/index.css" />
 
     <!-- GOOGLE FONTS IMPORTO desde CSS porque aqui no lo toma bootstrap -->
 
@@ -31,119 +22,65 @@
       referrerpolicy="no-referrer"
     />
     <title>Proyecto-Home</title>
+    <!------ LINK CSS BOOTSTRAP -------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- MI CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <a class="container__logo" href="./index.html">
-          <img class="header__logo" src="./assets/Logo-lu.jpeg" alt="logo" />
-        </a>
-
-        <nav class="nav__container">
-          <ul class="nav__list">
-            <li class="nav__item--li">
-              <a class="nav__link" href="./index.html">Home</a>
+    <header class="contenido__header container-fluid fixed-top px-5">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"
+          ><img
+            class="img__logo img-fluid"
+            src="./assets/logo-lu.jpeg"
+            alt=""
+            width="100"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item fs-4 px-4">
+              <a class="nav__link" href="index.html">Home</a>
             </li>
-            <li>
+            <li class="nav-item fs-4 px-4">
               <a class="nav__link" href="./pages/servicios.html">Servicios</a>
             </li>
-            <li class="nav__item--li">
+            <li class="nav-item fs-4 px-4">
               <a class="nav__link" href="./pages/nosotros.html">Nosotros</a>
             </li>
-            <li class="nav__item--li">
+            <li class="nav-item fs-4 px-4">
               <a class="nav__link" href="./pages/galeria.html">Galeria</a>
             </li>
-            <li class="nav__item--li">
+            <li class="nav-item fs-4 px-4">
               <a class="nav__link" href="./pages/contacto.html">Contacto</a>
             </li>
-            <li class="nav__item--li">
-              <a class="nav__link nav__icono--li" href="#"
-                ><i class="fa-regular fa-envelope"></i
-              ></a>
-            </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
 
-    <main>
-      <section class="portada">
-        <h1 class="portada__titulo">Salon de Uñas</h1>
-        <img class="portada__img" src="./assets/portada2.jpg" alt="portada" />
-      </section>
+    <main></main>
 
-      <section class="service__container">
-        <article class="service__card">
-          <img
-            class="service__card--img"
-            src="./assets/manicure2.webp"
-            alt="manicure"
-          />
-          <hr class="service__card--line" />
-          <p>Manicure</p>
-        </article>
-
-        <article class="service__card">
-          <img
-            class="service__card--img"
-            src="./assets/pedicure.jpg"
-            alt="pedicure"
-          />
-          <hr class="service__card--line" />
-          <p>Pedicure</p>
-        </article>
-
-        <article class="service__card">
-          <img
-            class="service__card--img"
-            src="./assets/esmaltados.jpg"
-            alt="esmaltados"
-          />
-          <hr class="service__card--line" />
-          <p>Esmaltados</p>
-        </article>
-
-        <article class="service__card">
-          <img
-            class="service__card--img"
-            src="./assets/depi.jpg"
-            alt="depilacion"
-          />
-          <hr class="service__card--line" />
-          <p>Depilacion<br /></p>
-        </article>
-
-        <article class="service__card">
-          <img
-            class="service__card--img"
-            src="./assets/provisoria.jpg"
-            alt="otros"
-          />
-          <hr class="service__card--line" />
-          <p>Otros Servicios<br /></p>
-        </article>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container__redes">
-        <p class="redes__titulo">Visita Nuestras Redes</p>
-        <a class="icono__redes" href="#"
-          ><i class="fa-brands fa-whatsapp"></i
-        ></a>
-        <a class="icono__redes" href="#"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a class="icono__redes" href="#"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-      </div>
-
-      <p class="container__autor">
-        @Copyright 2022 web | Creada por
-        <a class="autor" href="#">Arguello Soledad</a>
-      </p>
-    </footer>
+    <footer></footer>
     <!---  JS BOOTSTRAP ------->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

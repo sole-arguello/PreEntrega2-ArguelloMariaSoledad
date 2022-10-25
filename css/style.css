@@ -61,6 +61,153 @@ main {
   color: rgb(131, 83, 98);
   text-shadow: 1px 1px 2px rgb(58, 56, 56);
 }
+/*------ SERVICIOS ------*/
+.site__service {
+  background: linear-gradient(
+    to bottom,
+    rgb(241, 235, 236),
+    rgb(238, 173, 178)
+  );
+  padding: 0 1rem;
+  text-align: center;
+}
+.service__container--manicure {
+  padding: 8% 0 3% 0;
+}
+.service__container--depi{
+  padding: 3% 0 5% 0;
+}
+.service__titulo--manicure {
+  font-size: 2.1rem;
+  color: bisque;
+  font-weight: 600;
+  padding: 3% 0;
+  text-shadow: 1px 1px 2px black;
+}
+.service__titulo--depi {
+  font-size: 2.1rem;
+  color: bisque;
+  font-weight: 600;
+  padding-bottom: 3%;
+  text-shadow: 1px 1px 2px black;
+}
+.service__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 2%;
+  padding: 2rem 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(175, 119, 128);
+  text-shadow: 1px 1px 2px black;
+}
+.service__card:hover {
+  box-shadow: none;
+}
+.service__card--img {
+  width: 230px;
+  height: 230px;
+  border-radius: 100%;
+  border: 15px solid rgb(209, 136, 148);
+}
+.article__box1 {
+  margin: 10% 0;
+  background-color: rgb(219, 200, 200);
+  border: 1px solid rgb(187, 185, 185);
+}
+.article__box2 {
+  margin: 10% 0;
+  background-color: rgb(194, 191, 191);
+  border: 1px solid rgb(168, 167, 167);
+}
+.service__card--info {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 0 2% 0;
+}
+.service__card--description {
+  font-size: 1.2rem;
+  color: rgb(53, 52, 52);
+  text-align: left;
+  text-shadow: none;
+  font-weight: 100;
+  padding: 0 8%;
+}
+/*----- NOSOTROS -------*/
+.nosotros__container {
+  text-align: center;
+}
+/*--- Nosotros primera seccion ---*/
+.nosotros__team,
+.nosotros__somos {
+  font-size: 1.5rem;
+  padding: 2% 10%;
+}
+
+.nosotros__team--titulo,
+.nosotros__somos--titulo {
+  color: bisque;
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px black;
+}
+.nosotros__team--card {
+  background: white;
+  margin: 20px 0;
+  padding: 15% 0 10% 0;
+}
+.nosotros__img--team {
+  width: 95%;
+  border: 1px solid rgb(223, 211, 211);
+}
+.nosotros__nombre--team {
+  margin-top: 10%;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(117, 72, 72);
+  text-shadow: 1px 1px 2px rgb(66, 65, 65);
+}
+
+/*---  Nosotros segunda seccion----*/
+
+.nosotros__container--somos {
+  margin-bottom: 10%;
+}
+.nosotros__somos--titulo {
+  margin: 10% 0;
+}
+.nosotros__descripcion--somos {
+  font-size: 1rem;
+  line-height: 25px;
+  text-align: left;
+  margin-top: 3rem;
+}
+.nosotros__video--somos {
+  width: 100%;
+  height: 250px;
+  border: 1px solid black;
+}
+/*---- GALERIA -------*/
+.galeria__container{
+  background: linear-gradient(
+    to bottom,
+    rgb(236, 226, 228),
+    rgb(238, 173, 178)
+  );
+  color: bisque;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+  padding: 8rem 0 5rem 0;
+}
+.galeria__img {
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 16px #00000080;
+}
 /*-----CONTACTO--------*/
 .main__contacto {
   background: linear-gradient(
@@ -85,7 +232,8 @@ main {
 }
 
 /*---- FOOTER  ----*/
-footer, .icono__redes {
+footer,
+.icono__redes {
   background: rgb(197, 130, 153);
   color: bisque;
   text-shadow: 1px 1px 2px black;
@@ -98,14 +246,123 @@ footer, .icono__redes {
   color: bisque;
   font-style: oblique;
 }
-.autor:hover{
+.autor:hover {
   color: beige;
 }
 
 /*----MEDIA QUERY-----*/
-@media (min-width: 1030px) {
+@media (min-width: 768px) {
+  /*--- SERVICIOS ----*/
+  .service__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .service__titulo {
+    font-size: 3rem;
+  }
+  .grid__padre--card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .article__box1,
+  .article__box2 {
+    margin: 1% 5% 0 0;
+  }
+  .service__card--img {
+    width: 350px;
+    height: 350px;
+    border: 2px solid rgb(209, 136, 148);
+  }
+  .service__card--info {
+    display: flex;
+    flex-direction: column;
+  }
+  .service__card--line {
+    /*margin: 2rem 20rem;*/
+  }
+  /*--- NOSOTROS ---*/
+  .nosotros__team,
+  .nosotros__somos {
+    padding: 3%;
+  }
+  .nosotros__somos {
+    display: flex;
+    align-items: center;
+  }
+  .nosotros__container--somos {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros__container--card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 5px;
+  }
+  .nosotros__container--somos {
+    display: flex;
+  }
+  .nosotros__descripcion--somos {
+    margin-top: 0;
+    margin-right: 3%;
+  }
+
+  /*--- GALERIA---*/
+  .galeria__box {
+    display: grid;
+    /*grid-template-columns: repeat(1, fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*grid-gap: 20px;*/
+    column-gap: 10px;
+    row-gap: 20px;
+    padding: 2% 3%;
+  }
+  .galeria__img {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
   .card__img {
     height: 200px;
   }
-
+  /*--- SERVICIOS ---*/
+  .service__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid__padre--card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 10px;
+  }
+  .service__card--img {
+    width: 230px;
+    height: 230px;
+    border: 15px solid rgb(209, 136, 148);
+  }
+  .service__card--line {
+    /*margin: 2rem 8rem;*/
+  }
+  /*--- NOSOTROS ---*/
+  .nosotros__container {
+    padding: 5% 2% 0 2%;
+  }
+  .nosotros__container--card {
+    column-gap: 20px;
+  }
+  .nosotros__video--somos {
+    width: 75%;
+    height: 300px;
+  }
+  /*---- GALERIA ---*/
+  .galeria__titulo {
+    font-size: 3rem;
+  }
+  .galeria__box {
+    column-gap: 30px;
+    row-gap: 20px;
+    padding: 2% 10%;
+  }
 }

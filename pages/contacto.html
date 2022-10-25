@@ -78,59 +78,160 @@
       </nav>
     </header>
 
-    <main>
-      <section class="form__container">
-        <h1 class="form__titulo">Contacto</h1>
-        <div>
-          <form action="">
-            <label for="nombre">Nombre:</label>
-            <input
-              type="text"
-              name="nombre"
-              id="nombre"
-              placeholder="Ingrese su nombre aqui"
-            />
-            <br />
-            <label for="apellido">Apellido:</label>
-            <input
-              type="text"
-              name="apellido"
-              id="apellido"
-              placeholder="Ingrese su apellido aqui"
-            />
-            <br />
-            <label for="mensaje">Mensaje</label>
-            <br />
-            <textarea
-              name="mensaje"
-              id="mensaje"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <br />
-
-            <input type="submit" value="Enviar" />
-            <input type="reset" value="Limpiar" />
+    <main class="main__contacto">
+      <section class="seccion__contacto py-5 mt-5">
+        <h1 class="contacto__titulo pt-5 text-center fw-bold">Contacto</h1>
+        <div class="row container mx-2">
+          <form class="col-lg-8 py-5 pb-md-0">
+            <div class="border border-secondary p-3 rounded-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Nombre y Apellido</label
+                >
+                <input
+                  type="name"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Ingrese su nombre"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Mensaje</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Ingrese su mensaje"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-secondary px-5">
+                Enviar
+              </button>
+            </div>
           </form>
-        </div>
-        <div class="contenido__ubicacion">
-          <p class="ubicacion__titulo">Ubicacion</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3406.
-            8265825447907!2d-64.17181798485325!3d-31.
-            363764381421742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
-            1!3m2!1m1!2zMzHCsDIxJzQ5LjYiUyA2NMKwMTAnMTAuNyJX!5e0!3m2!1ses!2sar!4v1664076582068!5m2!1ses!2sar"
-            width="450"
-            height="250"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="col-lg-4">
+            <p class="">
+              <i class="fa-solid fa-location-dot mx-3 fs-4 mt-lg-5"></i>Remonda
+              xxx, CORDOBA
+            </p>
+            <p>
+              <i class="fa-solid fa-phone mx-3 fs-4"></i>+ 54 9 351 213-8337
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope mx-3 fs-4"></i
+              >lourdesbustos67@gmail.com
+            </p>
+            <iframe
+              class="mapa"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3406.
+              8265825447907!2d-64.17181798485325!3d-31.
+              363764381421742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+              1!3m2!1m1!2zMzHCsDIxJzQ5LjYiUyA2NMKwMTAnMTAuNyJX!5e0!3m2!1ses!2sar!4v1664076582068!5m2!1ses!2sar"
+              width="450"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
-      <section class="preguntas__container">
-        <p class="preguntas__titulo">Pregunats frecuentes</p>
+      <hr />
+      <section class="seccion__preguntas py-5 px-3">
+        <h2 class="contacto__preguntas pb-3 text-center">
+          Preguntas frecuentes
+        </h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item bg-transparent">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed text-dark"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                ¿Que formas de pago reciben?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <p class="mx-5 pt-2">
+                ¡Si! Recibimos tarjetas de Debito, Credito o Transferencia
+                bancaria.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item bg-transparent">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed text-dark"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                ¿Como se reserva un turno?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <p class="mx-5 pt-2">
+                Las reservas se realizan contactándonos por Instagram, Facebook
+                o WhatsApp (preferentemente)
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item bg-transparent">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed text-dark"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                ¿Otra pregunta?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <p class="mx-5 pt-2">
+                Lorem ipsum dolor Unde pariatur, expedita mollitia earum ipsa
+                nobis nos
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -140,9 +241,9 @@
           Buscanos en las redes
         </div>
         <div class="col-lg-2 col-md-3">
-          <a href="#" class=""><i class="fa-brands fa-facebook mx-2"></i></a>
-          <a href="#" class=""><i class="fa-brands fa-instagram mx-2"></i></a>
-          <a href="#" class=""><i class="fa-brands fa-whatsapp mx-2"></i></a>
+          <a href="#" class=""><i class="icono__redes fa-brands fa-facebook mx-2"></i></a>
+          <a href="#" class=""><i class="icono__redes fa-brands fa-instagram mx-2"></i></a>
+          <a href="#" class=""><i class="icono__redes fa-brands fa-whatsapp mx-2"></i></a>
         </div>
       </div>
 

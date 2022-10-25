@@ -61,9 +61,31 @@ main {
   color: rgb(131, 83, 98);
   text-shadow: 1px 1px 2px rgb(58, 56, 56);
 }
+/*-----CONTACTO--------*/
+.main__contacto {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(../assets/contacto/depositphotos_317114954-stock-photo-closeup-of-nails-in-uv.webp);
+
+  background-position: center 20%;
+  background-position-x: center;
+  background-position-y: 20%;
+  background-size: cover;
+}
+.contacto__titulo,
+.contacto__preguntas {
+  color: rgb(97, 20, 45);
+  text-shadow: 1px 1px 2px rgb(58, 56, 56);
+}
+/*---- PREGUNTAS ------*/
+.seccion__preguntas {
+  font-family: "Grandstander";
+}
+
 /*---- FOOTER  ----*/
-footer,
-i {
+footer, .icono__redes {
   background: rgb(197, 130, 153);
   color: bisque;
   text-shadow: 1px 1px 2px black;

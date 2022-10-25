@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,400;1,100;1,300&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&family=Noto+Sans+Vai&family=Raleway:wght@400;500;600;700&display=swap");
+/* Monsetrrat - Grandstander - Noto Sans Vai - Raleway */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Monserrat", sans-serif;
+  font-family: "Grandstander", sans-serif;
 }
 main {
   background: linear-gradient(
@@ -72,24 +72,18 @@ main {
   text-align: center;
 }
 .service__container--manicure {
-  padding: 8% 0 3% 0;
+  padding: 10% 0 3% 0;
 }
-.service__container--depi{
+.service__container--depi {
   padding: 3% 0 5% 0;
 }
-.service__titulo--manicure {
-  font-size: 2.1rem;
-  color: bisque;
-  font-weight: 600;
-  padding: 3% 0;
-  text-shadow: 1px 1px 2px black;
-}
+.service__titulo--manicure,
 .service__titulo--depi {
-  font-size: 2.1rem;
-  color: bisque;
+  font-size: 3rem;
   font-weight: 600;
-  padding-bottom: 3%;
-  text-shadow: 1px 1px 2px black;
+  color: rgb(97, 20, 45);
+  font-family: "Raleway";
+  text-shadow: 1px 1px 2px rgb(233, 225, 225);
 }
 .service__card {
   display: flex;
@@ -120,7 +114,7 @@ main {
 }
 .article__box2 {
   margin: 10% 0;
-  background-color: rgb(194, 191, 191);
+  background-color: rgb(219, 191, 191);
   border: 1px solid rgb(168, 167, 167);
 }
 .service__card--info {
@@ -143,21 +137,22 @@ main {
 /*--- Nosotros primera seccion ---*/
 .nosotros__team,
 .nosotros__somos {
-  font-size: 1.5rem;
   padding: 2% 10%;
 }
 
 .nosotros__team--titulo,
 .nosotros__somos--titulo {
-  color: bisque;
   font-size: 3rem;
   font-weight: 600;
-  text-shadow: 1px 1px 2px black;
+  color: rgb(97, 20, 45);
+  text-shadow: 1px 1px 2px rgb(233, 225, 225);
 }
 .nosotros__team--card {
   background: white;
   margin: 20px 0;
   padding: 15% 0 10% 0;
+  /*-- animacion ---*/
+  animation: from-right 2s ease;
 }
 .nosotros__img--team {
   width: 95%;
@@ -191,7 +186,7 @@ main {
   border: 1px solid black;
 }
 /*---- GALERIA -------*/
-.galeria__container{
+.galeria__container {
   background: linear-gradient(
     to bottom,
     rgb(236, 226, 228),
@@ -226,15 +221,12 @@ main {
   color: rgb(97, 20, 45);
   text-shadow: 1px 1px 2px rgb(58, 56, 56);
 }
-/*---- PREGUNTAS ------*/
-.seccion__preguntas {
-  font-family: "Grandstander";
-}
-
 /*---- FOOTER  ----*/
-footer,
-.icono__redes {
-  background: rgb(197, 130, 153);
+footer {
+  background: rgb(175, 95, 107);
+  box-shadow: -2px -2px 5px black;
+}
+footer, .icono__redes{
   color: bisque;
   text-shadow: 1px 1px 2px black;
 }
@@ -248,6 +240,17 @@ footer,
 }
 .autor:hover {
   color: beige;
+}
+/*---- ANIMACION ----*/
+@keyframes from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /*----MEDIA QUERY-----*/
@@ -276,9 +279,6 @@ footer,
   .service__card--info {
     display: flex;
     flex-direction: column;
-  }
-  .service__card--line {
-    /*margin: 2rem 20rem;*/
   }
   /*--- NOSOTROS ---*/
   .nosotros__team,
@@ -314,16 +314,23 @@ footer,
     /*grid-template-columns: repeat(1, fr);*/
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     /*grid-gap: 20px;*/
-    column-gap: 10px;
+    column-gap: 20px;
     row-gap: 20px;
     padding: 2% 3%;
   }
   .galeria__img {
     width: 100%;
     margin-bottom: 0;
+    transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
+      opacity 250ms linear;
+  }
+  .galeria__img:hover {
+    transform: scale(1.2);
+    opacity: 0.75;
   }
 }
 @media (min-width: 1024px) {
+  /*----index-----*/
   .card__img {
     height: 200px;
   }
@@ -342,9 +349,6 @@ footer,
     height: 230px;
     border: 15px solid rgb(209, 136, 148);
   }
-  .service__card--line {
-    /*margin: 2rem 8rem;*/
-  }
   /*--- NOSOTROS ---*/
   .nosotros__container {
     padding: 5% 2% 0 2%;
@@ -361,8 +365,8 @@ footer,
     font-size: 3rem;
   }
   .galeria__box {
-    column-gap: 30px;
-    row-gap: 20px;
+    column-gap: 40px;
+    row-gap: 40px;
     padding: 2% 10%;
   }
 }

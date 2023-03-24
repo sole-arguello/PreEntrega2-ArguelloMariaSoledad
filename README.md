@@ -52,7 +52,7 @@
 
 ## Segunda Entrega consiste en continuar con el proyecto en avance de conceptos aprendidos
 
-### DEMO:
+### DEMO: https://sole-arguello.github.io/PreEntrega2-ArguelloMariaSoledad/
 
 ### Temas Vistos:
     5. Flexbox

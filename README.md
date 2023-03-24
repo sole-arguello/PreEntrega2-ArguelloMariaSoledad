@@ -1,6 +1,6 @@
-# pre_entrega_1: Desarrollo de una Pagina Web
+# Pre Entrega 1 y 2 : Desarrollo de una Pagina Web
 
-      Consiste en comenzar a armar la estructura inicial de tu proyecto integrador.
+-------------------------  Primer entrega consiste en comenzar a armar la estructura inicial de tu proyecto integrador.   ---------------------------
 
 ### DEMO: Fue entregado en formato archivo comprimido.
 

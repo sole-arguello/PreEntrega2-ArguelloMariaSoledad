@@ -116,5 +116,5 @@
 
 ### Nota obtenida:
 
-![imagen](img/nota2.png)
+![imagen](nota2.png)
    

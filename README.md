@@ -2,7 +2,7 @@
 
 ----  Primer entrega consiste en comenzar a armar la estructura inicial de tu proyecto integrador.  ----
 
-### DEMO: Fue entregado en formato archivo comprimido.
+### DEMO: Fue entregado en formato ARCHIVO COMPRIMIDO y un  WIREFRAME FIGMA:![imagen](figma.png).
 
 ## Temas vistos:
 
@@ -46,8 +46,7 @@
        * El documento debe estar linkeado en las páginas del proyecto.
        * Formato: Archivo CSS (Flexbox no debe incluirse en esta entrega).
 
-## WIREFRAME FIGMA:
-![imagen](figma.png)
+## NOTA OBTENIDA:![imagen](nota1.png)
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ## Formato:

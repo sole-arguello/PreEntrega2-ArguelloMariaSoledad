@@ -1,6 +1,6 @@
 # Pre Entrega 1 y 2 : Desarrollo de una Pagina Web
 
--------------------------  Primer entrega consiste en comenzar a armar la estructura inicial de tu proyecto integrador.   ---------------------------
+----  Primer entrega consiste en comenzar a armar la estructura inicial de tu proyecto integrador.  ----
 
 ### DEMO: Fue entregado en formato archivo comprimido.
 
@@ -46,7 +46,8 @@
        * El documento debe estar linkeado en las páginas del proyecto.
        * Formato: Archivo CSS (Flexbox no debe incluirse en esta entrega).
 
-
+## WIREFRAME FIGMA:
+![imagen](figma.jpg)
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ## Formato:

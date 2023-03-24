@@ -1,0 +1,54 @@
+.site__service {
+  background: linear-gradient(
+    to bottom,
+    rgb(241, 235, 236),
+    rgb(238, 173, 178)
+  );
+  padding: 0 1rem;
+}
+.service__titulo {
+  text-align: center;
+  color: bisque;
+  font-size: 30px;
+  text-shadow: 1px 1px 2px black;
+}
+.service__card {
+  width: 25%;
+  padding: 30px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(145, 84, 94);
+  text-shadow: 1px 1px 2px black;
+}
+.article__box {
+  margin: 1px 0;
+  background-color: rgb(197, 155, 155);
+}
+.service__card--img {
+  width: 250px;
+  height: 220px;
+  border-radius: 90%;
+  border: 10px solid rgb(176, 116, 126);
+}
+.service__card--info {
+  padding: 0 1rem;
+}
+.service__card--name {
+  padding-top: 1rem;
+  overflow: hidden;
+}
+.service__card--line {
+  width: 4rem;
+  margin: 2rem 0;
+  margin-left: 7rem;
+  font-weight: 800;
+  border: 2px solid;
+  border-radius: 18%;
+  color: rgb(145, 84, 94);
+}
+.service__card--description {
+  color: rgb(82, 78, 78);
+  font-size: 20px;
+  font-weight: 400;
+}

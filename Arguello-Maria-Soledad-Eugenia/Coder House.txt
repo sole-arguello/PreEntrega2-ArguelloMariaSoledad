@@ -1,0 +1,14 @@
+Figma:
+
+https://www.figma.com/file/KgKHm9JkZRR403BZ4qYcgn/wireframe?node-id=0%3A1
+
+----------------------------------------------------
+Aclaraciones
+
+- Figma cda vez que cierro se guarda pequeño y no se porque.
+
+- En mi html uso un <hr> para dibujar la linea
+
+- En la seccion servicios quise poner un degrade como en la seccion nosotros pero no se porque me lo toma por secciones cortando el color y repitiendolo.
+
+Si como parte de la correccion me pueden decir como correjirlo lo agradezco.
